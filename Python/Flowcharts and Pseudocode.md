@@ -44,6 +44,9 @@ ELSE IF number is negative THEN
 ELSE
     PRINT number is zero
 ```
+
+<div style="page-break-after: always;"></div>
+
 ## Flowcharts
 This is a flowchart equivalent to the above Python code.
 ```mermaid
@@ -62,6 +65,9 @@ flowchart TD
     isPositive --"No"--> isNegative --"Yes"--> displayNegative --> connector1
     isNegative --"No"--> displayZero --> connector1
 ```
+
+<div style="page-break-after: always;"></div>
+
 # Iteration Statements
 ## Python
 The following Python code shows two examples of loops using `while` and `for` syntax. Both loops iterate from 0 to 10 incrementing by 1 and printing the current value of their iterator.
@@ -85,6 +91,9 @@ LOOP WHILE c < 10
 FOR i FROM 0 TO 10 INC 1 // Suggested syntax
     PRINT i
 ```
+
+<div style="page-break-after: always;"></div>
+
 ## Flowchart
 This is a flowchart equivalent to the above Python code.
 ```mermaid
@@ -103,6 +112,9 @@ flowchart TD
     whileLoop --"No"--> assignI --> forLoop --"Yes"--> displayI --> incrementI --> forLoop
     forLoop --"No"--> stop
 ```
+
+<div style="page-break-after: always;"></div>
+
 # Method Calls
 ## Python
 The following Python code shows a method called *AddNumbers* which adds two numbers together and returns their sum. The program gets two integers from the user and uses the *AddNumbers* method to calculate their sum and then print it to the screen.
@@ -128,9 +140,11 @@ INPUT number2 AS integer
 sum = AddNumbers(number1, number2)
 DISPLAY sum
 ```
+
+<div style="page-break-after: always;"></div>
+
 ## Flowchart
 This is a flowchart equivalent to the above Python code.
-
 ```mermaid
 flowchart TD
 an_start(["Start: AddNumbers(a, b)"])
@@ -148,5 +162,3 @@ stop(["Stop"])
 
 start --> inputNumber1 --> inputNumber2 --> calcSum --> displaySum --> stop
 ```
-# Notes
-All flowcharts in this document were made using [Mermaid](https://mermaid.js.org/). To properly display these diagrams you should use the Visual Studio Code extension [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid).
